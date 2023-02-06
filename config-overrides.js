@@ -13,7 +13,8 @@ module.exports = function override(config, env) {
         stream: require.resolve('stream-browserify'),
         timers: require.resolve('timers-browserify'),
         vm: require.resolve('vm-browserify'),
-        fs: require.resolve('fs')
+        zlib: require.resolve('browserify-zlib'),
+        express: require.resolve('express')
     };
     config.plugins.push(
         new webpack.ProvidePlugin({
